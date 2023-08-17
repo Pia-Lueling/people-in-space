@@ -9,3 +9,10 @@ async function peopleInSpace() {
   return data;
 }
 peopleInSpace();
+
+async function spanInit() {
+  const data = await peopleInSpace();
+  spanElement.innerText = data.number;
+}
+
+spanInit();
